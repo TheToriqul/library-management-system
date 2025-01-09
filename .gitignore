@@ -1,0 +1,54 @@
+# C++ compiled files
+*.o
+*.out
+*.exe
+*.app
+*.dll
+*.dylib
+*.so
+
+# IDE specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Code::Blocks specific
+*.layout
+*.depend
+bin/
+obj/
+
+# Visual Studio specific
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+Debug/
+Release/
+x64/
+*.pdb
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Temporary documentation files
+*.docx#
+~$*.docx
+
+# Backup files
+*.bak
+*~
+*.swp
+*.swo
+
+# Log files
+*.log
+
+# Build directories
+build/
+cmake-build-debug/
+cmake-build-release/
