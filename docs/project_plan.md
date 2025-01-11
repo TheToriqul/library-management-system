@@ -24,14 +24,17 @@ LibrarySystem/
 │   ├── main.cpp           # Main program entry
 │   ├── library.cpp        # Implementation file
 │   ├── library.h          # Header file
-│   └── validation.h       # Validation functions
-├── data/
+│   ├── validation.h       # Validation functions
+│   ├── Makefile           # Build configuration
 │   └── books.dat          # Book records
 ├── docs/
 │   ├── user_manual.txt    # User guide
+│   ├── sample_output.md   # Sample output screenshots lookalike
 │   └── screenshots/       # Program screenshots
+│     ├── AddBooks.png     # Screenshots
+│     ├── SearchBooks.png  # Screenshots         
 └── report/
-    └── project_report.docx # Project documentation
+    └── project_report.docx
 ```
 
 ### 2.2 Core Components
