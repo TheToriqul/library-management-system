@@ -78,9 +78,20 @@ LibrarySystem/
 
 ### Usage
 
-1. Run the executable:
+1. Navigate to the src directory:
    ```bash
-   ./Library-Management-System
+   cd LibrarySystem/src
+   ```
+
+2. Compile the program using make:
+   ```bash
+   make
+   ```
+   This will compile the source files and create the 'library' executable.
+
+3. Run the program:
+   ```bash
+   ./library
    ```
 
 2. Navigate through the intuitive menu system:
