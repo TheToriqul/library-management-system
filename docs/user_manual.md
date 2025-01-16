@@ -30,9 +30,10 @@ LibrarySystem/
 │   ├── main.cpp           # Main program entry
 │   ├── library.cpp        # Implementation file
 │   ├── library.h          # Header file
-│   ├── books.dat          # Book records
+│   ├── validation.h       # Validation functions
 │   ├── Makefile           # Build configuration
-│   └── validation.h       # Validation functions
+│   ├── CMakeLists.txt     # Build configuration for CMakeLists
+│   └── books.dat          # Book records
 ```
 
 ### 2.2 Compilation and Running
