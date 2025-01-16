@@ -53,6 +53,7 @@ LibrarySystem/
 │   ├── library.h          # Header file
 │   ├── validation.h       # Validation functions
 │   ├── Makefile           # Build configuration
+│   ├── CMakeLists.txt     # Build configuration for CMakeLists
 │   └── books.dat          # Book records
 ├── docs/
 │   ├── user_manual.txt    # User guide
