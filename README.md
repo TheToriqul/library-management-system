@@ -9,7 +9,7 @@
 
 A modern, efficient C++ library management system with file-based storage and an intuitive command-line interface.
 
-[Explore Demo](#usage) • [View Documentation](#documentation) • [Report Bug](https://github.com/TheToriqul/library-system/issues) • [Request Feature](https://github.com/TheToriqul/library-system/issues)
+[Explore Demo](#usage) • [View Documentation](./docs/) • [Report Bug](https://github.com/TheToriqul/library-system/issues) • [Request Feature](https://github.com/TheToriqul/library-system/issues)
 
 </div>
 
