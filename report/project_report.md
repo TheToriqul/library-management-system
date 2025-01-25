@@ -103,8 +103,7 @@ LibrarySystem/
 │   ├── library.cpp        # Implementation file
 │   ├── library.h          # Header file
 │   ├── validation.h       # Validation functions
-│   ├── Makefile           # Build configuration
-│   └── books.dat          # Book records
+│   └── Makefile           # Build configuration
 ├── docs/
 │   ├── user_manual.txt    # User guide
 │   ├── sample_output.md   # Sample output screenshots lookalike
