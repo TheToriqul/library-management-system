@@ -35,6 +35,14 @@ A modern, efficient C++ library management system with file-based storage and an
   - 🔄 Automatic database creation
   - ✅ Data consistency maintenance
 
+## 🏗️ Project Architecture
+<figure >
+  <p align="center">
+      <img src="./architecture.svg" alt="project architecture" />
+      <p align="center">Project Architecture</p> 
+  </p>
+</figure>
+
 ## 🔧 System Requirements
 
 - C++ Compiler (GCC 4.9 or later)
