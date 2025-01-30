@@ -39,7 +39,7 @@ A modern, efficient C++ library management system with file-based storage and an
 <figure >
   <p align="center">
       <img src="./architecture.svg" alt="project architecture" />
-      <p align="center">Project Architecture</p> 
+      <p align="center">Library Management System Project Architecture</p> 
   </p>
 </figure>
 
