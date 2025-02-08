@@ -24,7 +24,6 @@ LibrarySystem/
 │   ├── main.cpp           # Main program entry
 │   ├── library.cpp        # Implementation file
 │   ├── library.h          # Header file
-│   ├── validation.h       # Validation functions
 │   ├── Makefile           # Build configuration
 │   ├── CMakeLists.txt     # Build configuration for CMakeLists
 │   └── books.dat          # Book records

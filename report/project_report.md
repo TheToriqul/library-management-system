@@ -102,7 +102,6 @@ LibrarySystem/
 │   ├── main.cpp           # Main program entry
 │   ├── library.cpp        # Implementation file
 │   ├── library.h          # Header file
-│   ├── validation.h       # Validation functions
 │   └── Makefile           # Build configuration
 ├── docs/
 │   ├── user_manual.txt    # User guide
