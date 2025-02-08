@@ -1,80 +1,85 @@
-/**
- * Library Management System Header
- * Defines the core structures and classes for the library management system
- */
+// /**
+//  * Library Management System Header
+//  * Defines the core structures and classes for the library management system
+//  */
 
 #ifndef LIBRARY_H
 #define LIBRARY_H
 
 #include <fstream>
 #include <iostream>
+#include <string>
 #include <cstring>
 #include <iomanip>
-#include <cstdlib>
+#include <stdexcept>
+#include <limits>
+#include <sstream>
+#include <algorithm>
+#include <cstdio>
 
 using namespace std;
 
-/**
- * Book Structure
- * Represents a single book record in the library system
- */
+// Constants for validation
+constexpr int MAX_TITLE_LENGTH = 50;
+constexpr int MAX_AUTHOR_LENGTH = 30;
+constexpr int MAX_STATUS_LENGTH = 10;
+constexpr float MIN_PRICE = 0.01f;
+constexpr float MAX_PRICE = 9999.99f;
+constexpr int MIN_QUANTITY = 0;
+constexpr int MAX_QUANTITY = 999;
+constexpr int RECORDS_PER_PAGE = 5;
+
 struct Book {
-    int id;            // Unique identifier for the book
-    char title[50];    // Book title (max 49 chars + null terminator)
-    char author[30];   // Author name (max 29 chars + null terminator)
-    float price;       // Book price in currency units
-    int quantity;      // Number of copies available
-    char status[10];   // Current status (Available/Out)
+    int id;
+    char title[MAX_TITLE_LENGTH];
+    char author[MAX_AUTHOR_LENGTH];
+    float price;
+    int quantity;
+    char status[MAX_STATUS_LENGTH];
 };
 
-/**
- * LibrarySystem Class
- * Manages all operations related to the library management system
- */
 class LibrarySystem {
 private:
-    fstream file;      // File stream for database operations
-    Book book;         // Book object for temporary storage
+    fstream file;
+    Book book;
+    string filename;
+    string tempFilename;
+    string backupFilename;
     
-    /**
-     * Input Validation Methods
-     */
-    bool validateId(int id);           // Validates book ID uniqueness
-    bool validateTitle(const char* title);    // Validates book title
-    bool validateAuthor(const char* author);  // Validates author name
-    bool validatePrice(float price);          // Validates book price
-    bool validateQuantity(int qty);           // Validates quantity
-    void clearInputBuffer();                  // Clears cin buffer
+    // File operations
+    bool openFile(const string& mode);
+    bool closeFile();
+    bool createBackup();
+    bool restoreBackup();
+    bool commitChanges();
+    
+    // Validation methods
+    bool validateId(int id);
+    bool validateTitle(const string& title);
+    bool validateAuthor(const string& author);
+    bool validatePrice(float price);
+    bool validateQuantity(int qty);
+    
+    // Utility methods
+    void clearInputBuffer();
+    void showHeader(const string& title);
     void pauseScreen();
-    void clearScreen(); 
-
+    string formatId(int id);
+    void safeStrCopy(char* dest, const string& src, size_t maxLen);
+    bool getNumericInput(float& value);
+    bool getNumericInput(int& value);
+    bool getStringInput(string& value, size_t maxLen);
+    
 public:
-    /**
-     * Constructor
-     * Opens or creates the database file
-     */
     LibrarySystem();
-
-    /**
-     * Destructor
-     * Ensures proper closure of file handles
-     */
     ~LibrarySystem();
     
-    /**
-     * Core CRUD Operations
-     */
-    void addBook();        // Add new book to database
-    void searchBook();     // Search for a book by ID
-    void updateBook();     // Update existing book details
-    void deleteBook();     // Remove book from database
-    void displayBooks();   // Show all books with pagination
-    
-    /**
-     * User Interface Methods
-     */
-    void mainMenu();       // Display main menu and handle choices
-    void showHeader(const char* title);  // Display formatted headers
+    void addBook();
+    void searchBook();
+    void updateBook();
+    void deleteBook();
+    void displayBooks();
+    void mainMenu();
 };
 
 #endif

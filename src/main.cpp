@@ -20,9 +20,18 @@
  */
 
 #include "library.h"
+#include <iostream>
 
 int main() {
-    LibrarySystem library;  // Create library system instance
-    library.mainMenu();     // Start the main program loop
-    return 0;              // Exit program
+    try {
+        LibrarySystem library;
+        library.mainMenu();
+    } catch (const exception& e) {
+        cerr << "Fatal error: " << e.what() << endl;
+        return 1;
+    } catch (...) {
+        cerr << "Unknown fatal error occurred!" << endl;
+        return 1;
+    }
+    return 0;
 }
