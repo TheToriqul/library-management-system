@@ -16,7 +16,6 @@
  * - main.cpp: Program entry point
  * - library.h: Class and structure definitions
  * - library.cpp: Implementation of library functions
- * - validation.h: Input validation utilities
  */
 
 #include "library.h"
