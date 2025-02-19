@@ -77,7 +77,7 @@ LibrarySystem/
 │    └── project_report.docx
 └── README.md 
 
-- Structure Details:
+### Structure Details:
     • LibrarySystem/: The root directory containing all project files.
     • src/ : The subdirectory containing source code, configurations, and the database.
     • main.cpp: The entry point of the program where execution begins.
