@@ -58,13 +58,24 @@ The Library Management System provides five core operations:
 3. Configure environment variables
 
 ### 3.2 Ensure the below files structures
-LibrarySystem/   
-      ├── src/
-      │   ├── main.cpp           
-      │   ├── library.cpp        
-      │   ├── library.h                
-      │   ├── Makefile          
-      │   └── books.dat
+
+LibrarySystem/
+├── src/
+│   ├── main.cpp           # Main program entry
+│   ├── library.cpp        # Implementation file
+│   ├── library.h          # Header file
+│   ├── Makefile           # Build configuration
+│   ├── CMakeLists.txt     # Build configuration for CMakeLists
+│   └── books.dat          # Book records
+├── docs/
+│   ├── user_manual.txt    # User guide
+│   ├── sample_output.md   # Sample output screenshots lookalike
+│   └── screenshots/       # Program screenshots
+│    ├── AddBooks.png     # Screenshots
+│    ├── SearchBooks.png  # Screenshots         
+├── report/
+│    └── project_report.docx
+└── README.md 
 
 - Structure Details:
     • LibrarySystem/: The root directory containing all project files.
