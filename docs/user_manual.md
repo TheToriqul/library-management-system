@@ -1,7 +1,6 @@
 # LIBRARY MANAGEMENT SYSTEM
-## USER MANUAL
+### USER MANUAL
 ### Version 1.0
-====================================================================
 
 ## Table of Contents
 1. Introduction
@@ -22,7 +21,6 @@
 
 
 ## 1. Introduction
-====================================================================
 The Library Management System is a comprehensive software solution designed for managing library resources efficiently. This manual provides detailed instructions for installation, operation, and maintenance of the system.
 - Efficient book record management
 - Real-time inventory tracking
@@ -40,7 +38,6 @@ The Library Management System provides five core operations:
 
 
 ## 2. System Requirements
-====================================================================
 ### 2.1 Hardware Requirements
 - Processor: 1 GHz or faster
 - RAM: Minimum 512MB
@@ -55,14 +52,13 @@ The Library Management System provides five core operations:
 
 
 ## 3. Installation
-====================================================================
 ### 3.1 Pre-installation Setup
 1. Verify system requirements
 2. Install required compiler and build tools
 3. Configure environment variables
 
 ### 3.2 Ensure the below files structures
-- LibrarySystem/
+- LibrarySystem/   
       ├── src/
       │   ├── main.cpp           
       │   ├── library.cpp        
@@ -98,7 +94,6 @@ This subsection explains how the database (books.dat) works:
 
 
 ## 4. System Functions
-====================================================================
 ### 4.1 Core Features
 - Book Record Management
 - Search and Retrieval
@@ -114,7 +109,6 @@ This subsection explains how the database (books.dat) works:
 
 
 ## 5. Detailed Operations Guide
-====================================================================
 The system offers users a basic interface with a friendly design to access all available features through this menu. The system operates through users selecting options by typing their matching numbers between 1 and 6 and pressing Enter. When you launch the program, you'll see the following menu:
 ```
 =======================================
@@ -320,7 +314,7 @@ A paginated list displays all books present in the database system.
 
    ID    Title                    Author          Price    Qty    Status
    ------------------------------------------------------------------------
-   0001  Programming in C++       John Smith      49.99     5    Available
+   0001  Programming in C++      John Smith      49.99     5    Available
    0002  Data Structures         Jane Doe        39.99     3    Available
    0003  Algorithms              Mike Brown      44.99     0    Out
    0004  Web Development         Sarah Lee       34.99     2    Available
@@ -334,7 +328,6 @@ A paginated list displays all books present in the database system.
 
 
 ## 6. Data Validation Rules
-====================================================================
 ### 6.1 Title Validation
 - Minimum length: 3 characters, Maximum: 49 characters.
 - Allowed: Letters, numbers, spaces, basic punctuation.
@@ -353,7 +346,6 @@ A paginated list displays all books present in the database system.
 
 
 ## 7. Error Messages and Resolution
-====================================================================
 ### 7.1 Input Errors
 - "Invalid title length": Enter title between 3-49 characters.
 - "Invalid author name": Use only letters and spaces.
@@ -373,7 +365,6 @@ A paginated list displays all books present in the database system.
 
 
 ## 8. Troubleshooting
-====================================================================
 ### 8.1 Database Issues
 Problem: "Unable to create or open database file"
 Solution:
@@ -397,7 +388,6 @@ Solution:
 
 
 ## 9. Best Practices
-====================================================================
 ### 9.1 Data Entry
 - Use clear, descriptive titles
 - Verify prices and quantities before entry
@@ -420,7 +410,6 @@ Solution:
 
 
 ## 10. Technical Support
-====================================================================
 ### 10.1 Support Procedures
 1. Document the issue
 2. Collect error messages
@@ -448,5 +437,5 @@ Last Updated: 18 February 2025
 
 
 ## End Note
-====================================================================
+---
 This user manual is stored as user_manual.txt in the docs directory. Refer to it whenever you need guidance on system operation, troubleshooting, or best practices. For updates and additional documentation, check the system's documentation folder.
