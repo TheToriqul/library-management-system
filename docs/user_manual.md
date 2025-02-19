@@ -58,7 +58,7 @@ The Library Management System provides five core operations:
 3. Configure environment variables
 
 ### 3.2 Ensure the below files structures
-
+```
 LibrarySystem/
 ├── src/
 │   ├── main.cpp           # Main program entry
@@ -76,6 +76,7 @@ LibrarySystem/
 ├── report/
 │    └── project_report.docx
 └── README.md 
+```
 
 ### Structure Details:
     • LibrarySystem/: The root directory containing all project files.
